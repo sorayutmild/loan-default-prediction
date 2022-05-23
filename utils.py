@@ -1,5 +1,6 @@
 import pandas as pd
 import numpy as np
+from IPython.display import display
 
 def add_prefix_to_colnames(df, prefix, fixed_col_name='account_id'):
     df = df.add_prefix(prefix)
@@ -34,3 +35,13 @@ def summary_group_num_data(main_df, add_df, col_name=str, how='left', on=['accou
     tt['count'] = t.groupby(by=by)[col_name].count().reset_index(drop=True)
 
     return tt
+
+def day_to_int(day_serie):
+    return np.array([d.days for d in day_serie]).astype('float')
+
+def summary_df(df, table_name=''):
+    print(table_name)
+    print(df.shape)
+    display(df.head())
+    print('missing value')
+    display(df.isnull().sum())
