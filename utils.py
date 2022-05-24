@@ -37,7 +37,10 @@ def summary_group_num_data(main_df, add_df, col_name=str, how='left', on=['accou
     return tt
 
 def day_to_int(day_serie):
-    return np.array([d.days for d in day_serie]).astype('float')
+    return np.array([d.days for d in day_serie]).astype('int64')
+
+def str_to_datetime(series, format='%Y-%m-%d'):
+    return pd.to_datetime(series, format=format)
 
 def summary_df(df, table_name=''):
     print(table_name)

@@ -5,3 +5,5 @@ table_csv
 incloud_monthly_trans_normbyday.csv
 incloud_monthly_trans.csv
 profit_test.ipynb
+transformed_data/*
+!transformed_data/final_transformed_data.csv
