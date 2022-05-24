@@ -8,3 +8,4 @@ transformed_data/*.csv
 !transformed_data/final_transformed_data.csv
 berka.ows
 powerbi_loan_default.pbix
+__pycache__
