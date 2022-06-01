@@ -30,11 +30,11 @@ in the last, we use **XGboost** with feature selection (using important) and Gri
 | XGBClassifier          | 0.923 | 0.596 | 0.738   | \
 
 * Performance after using best params & best feature
-| **model**              | Acc   | F1    | ROC_AUC | \
-|------------------------|-------|-------|---------| \
-| LGBMClassifier         | 0.919 | 0.572 | 0.731   | \
-| RandomForestClassifier | 0.912 | 0.616 | 0.791   | \
-| XGBClassifier          | 0.927 | 0.645 | 0.784   | \
+| **model**              | Acc   | F1    | ROC_AUC |   |
+|------------------------|-------|-------|---------|---|
+| LGBMClassifier         | 0.919 | 0.572 | 0.731   |   |
+| RandomForestClassifier | 0.912 | 0.616 | 0.791   |   |
+| XGBClassifier          | 0.927 | 0.645 | 0.784   |   |
 
 ### Power BI Visualization
 we use Power BI to create a interactive dashboard to visualize the profit we've made
