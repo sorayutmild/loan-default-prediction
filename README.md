@@ -23,25 +23,25 @@ in the last, we use **XGboost** with feature selection (using important) and Gri
 ## Results
 ### performance results 
 * inital model performance 
-| **model**              | Acc   | F1    | ROC_AUC | \
-|------------------------|-------|-------|---------| \
-| LGBMClassifier         | 0.925 | 0.553 | 0.743   | \
-| RandomForestClassifier | 0.924 | 0.544 | 0.764   | \
-| XGBClassifier          | 0.923 | 0.596 | 0.738   | \
+| model | Acc | F1 | ROC_AUC |
+ ---                   | --- |--- |--- |
+LGBMClassifier         | 0.925 | 0.553 | 0.743 
+RandomForestClassifier | 0.924 | 0.544 | 0.764  
+XGBClassifier          | 0.923 | 0.596 | 0.738  
 
 * Performance after using best params & best feature
-| **model**              | Acc   | F1    | ROC_AUC |   |
-|------------------------|-------|-------|---------|---|
-| LGBMClassifier         | 0.919 | 0.572 | 0.731   |   |
-| RandomForestClassifier | 0.912 | 0.616 | 0.791   |   |
-| XGBClassifier          | 0.927 | 0.645 | 0.784   |   |
+| model                  | Acc   | F1    | ROC_AUC |
+ ---                   | --- |--- |--- |
+LGBMClassifier         | 0.919 | 0.572 | 0.731  
+RandomForestClassifier | 0.912 | 0.616 | 0.791  
+XGBClassifier          | 0.927 | 0.645 | 0.784  
 
 ### Power BI Visualization
 we use Power BI to create a interactive dashboard to visualize the profit we've made
 ![Dashboard](img/dashboard.gif "Dashboard")
 
 # Links
-[Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjAzNzBiODItMjFiMC00N2RhLWJlNzQtOTRhNTUzZDliNDkzIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf57bff23ee235c96e001)
+[Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjAzNzBiODItMjFiMC00N2RhLWJlNzQtOTRhNTUzZDliNDkzIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf57bff23ee235c96e001) \
 [Slide presentation](https://www.canva.com/design/DAFA2LPDvU0/Ic6zbqoEjrfDSmRpghyBgw/view?utm_content=DAFA2LPDvU0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 
