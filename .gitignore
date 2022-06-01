@@ -10,3 +10,8 @@ berka.ows
 powerbi_loan_default.pbix
 __pycache__
 user_tracking.ipynb
+report/*
+!report/after_trans_payment_for_loan.csv
+!report/ori_profit.csv
+!report/report_xgb_threshold_profit.csv
+!report/report_xgb.csv
