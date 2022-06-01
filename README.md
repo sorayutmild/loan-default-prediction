@@ -23,6 +23,7 @@ in the last, we use **XGboost** with feature selection (using important) and Gri
 ## Results
 ### performance results 
 * inital model performance 
+
 | model | Acc | F1 | ROC_AUC |
  ---                   | --- |--- |--- |
 LGBMClassifier         | 0.925 | 0.553 | 0.743 
@@ -30,6 +31,7 @@ RandomForestClassifier | 0.924 | 0.544 | 0.764
 XGBClassifier          | 0.923 | 0.596 | 0.738  
 
 * Performance after using best params & best feature
+
 | model                  | Acc   | F1    | ROC_AUC |
  ---                   | --- |--- |--- |
 LGBMClassifier         | 0.919 | 0.572 | 0.731  
