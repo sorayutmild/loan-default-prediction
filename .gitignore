@@ -7,7 +7,6 @@ incloud_monthly_trans.csv
 transformed_data/*.csv
 !transformed_data/final_transformed_data.csv
 berka.ows
-powerbi_loan_default.pbix
 __pycache__
 user_tracking.ipynb
 report/*
