@@ -9,7 +9,7 @@ We use [Berka dataset](https://relational.fit.cvut.cz/dataset/Financial) or PKDD
 the data relation is shown below.
 ![ER diagram of dataset](img/Data_description.png "ER diagram of dataset")
 
-# Experiments
+## Experiments
 * we've tried several model which are LGBM, RandomForest, and XGboost (we used auto ML and found that these models are best)
 in the last, we use **XGboost** with feature selection (using important) and Gridserch to tuning hyperparameters because its give best performance
 * we calculate profit by using profit = revenue - cost which revenue is from money the bank get from interest and cost is defaulted money. the more information is in `profit_analysis.ipynb`
