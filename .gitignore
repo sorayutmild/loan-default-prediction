@@ -9,3 +9,4 @@ transformed_data/*.csv
 berka.ows
 powerbi_loan_default.pbix
 __pycache__
+user_tracking.ipynb
