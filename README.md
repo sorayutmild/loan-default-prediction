@@ -35,7 +35,7 @@ The data relationship is depicted in the diagram below.
 
 ## Results
 ### Performance results 
-* inital model performance 
+* Initial model performance 
 
 | model | Acc | F1 | ROC_AUC |
  ---                   | --- |--- |--- |
