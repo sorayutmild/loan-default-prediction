@@ -1,5 +1,5 @@
 # loan-default-prediction
-Loan default prediction with Berka Dataset
+**Loan default prediction with Berka Dataset** \
 ![bankker cat](img/loan_cat.gif "bankker cat")
 
 ## Goal
