@@ -24,6 +24,7 @@ The data relationship is depicted in the diagram below.
 ## Experiments
 * We used only information from before the loan was accepted (because our Goal is to make decision to issue the loan)
 * We tried several models, including LGBM, RandomForest, and XGboost (we used auto ML and discovered that these models are the best), and in the end, we used XGboost with feature selection (using feature important) and Grid-search to tune hyperparameters because it gives the best results.
+* We used SMOTE to handle imbalanced data
 * Profit is calculated using the formula profit = revenue - cost, where revenue is money earned by the bank from interest and cost is defaulted money. the more information is in `profit_analysis.ipynb`
 
 ## How to run
@@ -42,7 +43,7 @@ LGBMClassifier         | 0.925 | 0.553 | 0.743
 RandomForestClassifier | 0.924 | 0.544 | 0.764  
 XGBClassifier          | 0.923 | 0.596 | 0.738  
 
-* Performance after using best params & best feature
+* Performance after using best params, best feature, and SMOTE
 
 | model                  | Acc   | F1    | ROC_AUC |
  ---                   | --- |--- |--- |
