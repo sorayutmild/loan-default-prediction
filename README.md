@@ -1,6 +1,10 @@
 # loan-default-prediction
 **Loan default prediction with Berka Dataset** \
-![bankker cat](img/loan_cat.gif "bankker cat")
+<!-- ![banker cat](img/loan_cat.gif "banker cat") -->
+
+<p align="center">
+  <img src="https://github.com/sorayutmild/loan-default-prediction/blob/main/img/loan_cat.gif?raw=true" alt="banker cat"/>
+</p>
 
 ## Goal
 To provides mechanisms in determining which consumers should receive loans and to benefit banks in increasing profits.
