@@ -1,5 +1,5 @@
 # loan-default-prediction
-**Loan default prediction with Berka Dataset** 
+Loan default prediction with Berka Dataset using XGboost model.
 <!-- ![banker cat](img/loan_cat.gif "banker cat") -->
 
 <p align="center">
@@ -17,7 +17,12 @@ The data relationship is depicted in the diagram below.
   <img src="https://github.com/sorayutmild/loan-default-prediction/blob/main/img/Data_description.png?raw=true" alt="ER diagram of dataset"/>
 </p>
 
+## Challenges
+* Imbalanced data (606 negative class, 76 possitive class)
+* Feature engineering (Creation, Extraction, Transformation)
+
 ## Experiments
+* We only used before loan information (because our Goal is to make decision to issue the loan)
 * We tried several models, including LGBM, RandomForest, and XGboost (we used auto ML and discovered that these models are the best), and in the end, we used XGboost with feature selection (using feature important) and Grid-search to tune hyperparameters because it gives the best results.
 * Profit is calculated using the formula profit = revenue - cost, where revenue is money earned by the bank from interest and cost is defaulted money. the more information is in `profit_analysis.ipynb`
 
