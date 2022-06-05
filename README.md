@@ -22,7 +22,7 @@ The data relationship is depicted in the diagram below.
 * Feature engineering (Creation, Extraction, Transformation)
 
 ## Experiments
-* We only used before loan information (because our Goal is to make decision to issue the loan)
+* We used only information from before the loan was accepted (because our Goal is to make decision to issue the loan)
 * We tried several models, including LGBM, RandomForest, and XGboost (we used auto ML and discovered that these models are the best), and in the end, we used XGboost with feature selection (using feature important) and Grid-search to tune hyperparameters because it gives the best results.
 * Profit is calculated using the formula profit = revenue - cost, where revenue is money earned by the bank from interest and cost is defaulted money. the more information is in `profit_analysis.ipynb`
 
