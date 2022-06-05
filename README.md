@@ -52,7 +52,7 @@ RandomForestClassifier | 0.912 | 0.616 | 0.791
 XGBClassifier          | 0.927 | 0.645 | 0.784  
 
 ### Power BI Visualization
-we use Power BI to create a interactive dashboard to visualize the profit we've made
+We created an interactive dashboard with Power BI to visualize the profit we've made.
 <!-- ![Dashboard](img/dashboard.gif "Dashboard") -->
 <p align="center">
   <img src="https://github.com/sorayutmild/loan-default-prediction/blob/main/img/dashboard.gif?raw=true" alt="Dashboard"/>
