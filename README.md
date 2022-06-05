@@ -1,5 +1,5 @@
 # loan-default-prediction
-**Loan default prediction with Berka Dataset** \
+**Loan default prediction with Berka Dataset** 
 <!-- ![banker cat](img/loan_cat.gif "banker cat") -->
 
 <p align="center">
@@ -12,7 +12,10 @@ To provides mechanisms in determining which consumers should receive loans and t
 ## Dataset
 We use [Berka dataset](https://relational.fit.cvut.cz/dataset/Financial) also known as PKDD'99 Financial dataset which contains 606 successful and 76 not successful loans along with their personal and transaction information.
 The data relationship is depicted in the diagram below.
-![ER diagram of dataset](img/Data_description.png "ER diagram of dataset")
+<!-- ![ER diagram of dataset](img/Data_description.png "ER diagram of dataset") -->
+<p align="center">
+  <img src="https://github.com/sorayutmild/loan-default-prediction/blob/main/img/Data_description.png?raw=true" alt="ER diagram of dataset"/>
+</p>
 
 ## Experiments
 * We tried several models, including LGBM, RandomForest, and XGboost (we used auto ML and discovered that these models are the best), and in the end, we used XGboost with feature selection (using feature important) and Grid-search to tune hyperparameters because it gives the best results.
@@ -44,7 +47,10 @@ XGBClassifier          | 0.927 | 0.645 | 0.784
 
 ### Power BI Visualization
 we use Power BI to create a interactive dashboard to visualize the profit we've made
-![Dashboard](img/dashboard.gif "Dashboard")
+<!-- ![Dashboard](img/dashboard.gif "Dashboard") -->
+<p align="center">
+  <img src="https://github.com/sorayutmild/loan-default-prediction/blob/main/img/dashboard.gif?raw=true" alt="Dashboard"/>
+</p>
 
 # Links
 [Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjAzNzBiODItMjFiMC00N2RhLWJlNzQtOTRhNTUzZDliNDkzIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf57bff23ee235c96e001) \
