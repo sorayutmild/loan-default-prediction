@@ -1,21 +1,21 @@
 # loan-default-prediction
 Loan default prediction with Berka Dataset
+![bankker cat](img/loan_cat.gif "bankker cat")
 
 ## Goal
 To provides mechanisms in determining which consumers should receive loans and to benefit banks in increasing profits.
 
 ## Dataset
-We use [Berka dataset](https://relational.fit.cvut.cz/dataset/Financial) or PKDD'99 Financial dataset which contains 606 successful and 76 not successful loans along with their information and transactions.
-the data relation is shown below.
+We use [Berka dataset](https://relational.fit.cvut.cz/dataset/Financial) also known as PKDD'99 Financial dataset which contains 606 successful and 76 not successful loans along with their personal and transaction information.
+The data relationship is depicted in the diagram below.
 ![ER diagram of dataset](img/Data_description.png "ER diagram of dataset")
 
 ## Experiments
-* we've tried several model which are LGBM, RandomForest, and XGboost (we used auto ML and found that these models are best)
-in the last, we use **XGboost** with feature selection (using important) and Gridserch to tuning hyperparameters because its give best performance
-* we calculate profit by using profit = revenue - cost which revenue is from money the bank get from interest and cost is defaulted money. the more information is in `profit_analysis.ipynb`
+* We tried several models, including LGBM, RandomForest, and XGboost (we used auto ML and discovered that these models are the best), and in the end, we used XGboost with feature selection (using feature important) and Grid-search to tune hyperparameters because it gives the best results.
+* Profit is calculated using the formula profit = revenue - cost, where revenue is money earned by the bank from interest and cost is defaulted money. the more information is in `profit_analysis.ipynb`
 
 ## How to run
-* First, preprocess the raw data run `data_manipulation.ipynb`. The rusult will be in `transformed_data/final_transformed_data.csv`
+* First, preprocess the raw data run `data_manipulation.ipynb`. The results will be saved in `transformed_data/final_transformed_data.csv`
 * second, train model using `model.ipynb`. The results will be in `report/report_xgb.csv` which contains true label and probability of prediction in each account
 * then, we run `profit_analysis.ipynb` to create `report/ori_profit.csv` which is the original profit, and the final result `report/report_xgb_threshold_profit.csv` which is the profit after using this model in each threshold and each interest rate
 
@@ -45,5 +45,3 @@ we use Power BI to create a interactive dashboard to visualize the profit we've 
 # Links
 [Power BI dashboard](https://app.powerbi.com/view?r=eyJrIjoiZjAzNzBiODItMjFiMC00N2RhLWJlNzQtOTRhNTUzZDliNDkzIiwidCI6IjZmNDQzMmRjLTIwZDItNDQxZC1iMWRiLWFjMzM4MGJhNjMzZCIsImMiOjEwfQ%3D%3D&pageName=ReportSectionf57bff23ee235c96e001) \
 [Slide presentation](https://www.canva.com/design/DAFA2LPDvU0/Ic6zbqoEjrfDSmRpghyBgw/view?utm_content=DAFA2LPDvU0&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-
-
